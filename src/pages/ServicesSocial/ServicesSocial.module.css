@@ -1,0 +1,397 @@
+/* Page base */
+.page {
+  background: #0a0f2e;
+  color: #e6e9ff;
+}
+
+/* Accent & container assumptions (your project already has .container) */
+.accent {
+  color: #ffd76a;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  padding: clamp(40px, 7vw, 88px) 0 clamp(28px, 4vw, 48px);
+  background: radial-gradient(
+      60cqi 220px at 15% 0%,
+      rgba(255, 215, 106, 0.12),
+      transparent 60%
+    ),
+    radial-gradient(
+      45cqi 260px at 100% 10%,
+      rgba(56, 189, 248, 0.1),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #0f1336, #0a0f2e);
+  border-bottom: 1px solid #222a55;
+}
+
+/* Fluid grid that collapses gracefully */
+.heroInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(16px, 3vw, 32px);
+  align-items: center;
+}
+
+.kicker {
+  letter-spacing: 0.12em;
+  opacity: 0.85;
+  font-weight: 800;
+  margin: 0 0 8px;
+  font-size: clamp(12px, 1.4vw, 14px);
+}
+.h1 {
+  margin: 0 0 12px;
+  font-weight: 900;
+  font-size: clamp(26px, 5vw, 48px);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.lede {
+  margin: 0 0 clamp(12px, 2.5vw, 18px);
+  color: #c9cffc;
+  font-size: clamp(14px, 1.8vw, 16px);
+}
+
+.ctaRow {
+  display: flex;
+  gap: clamp(8px, 2vw, 14px);
+  flex-wrap: wrap;
+}
+
+.cta,
+.altCta {
+  display: inline-block;
+  padding: clamp(10px, 1.8vw, 14px) clamp(14px, 2.6vw, 20px);
+  border-radius: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  line-height: 1;
+  min-height: 44px; /* touch target */
+}
+.cta {
+  background: linear-gradient(180deg, #ffd76a, #ffb347);
+  color: #161616;
+  box-shadow: 0 14px 30px rgba(255, 215, 106, 0.25);
+}
+.altCta {
+  border: 1px solid #2a2f63;
+  color: #e6e9ff;
+}
+
+.heroArt {
+  display: grid;
+  place-items: center;
+}
+.illus {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16/12;
+  border-radius: 16px;
+  border: 1px solid #2a2f63;
+  background: radial-gradient(
+      160px 160px at 28% 35%,
+      rgba(255, 215, 106, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      220px 220px at 78% 65%,
+      rgba(56, 189, 248, 0.2),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #0f1336, #0a0f2e);
+  overflow: hidden;
+  margin-inline: auto;
+}
+.dotA,
+.dotB,
+.dotC {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(18px);
+  opacity: 0.6;
+}
+.dotA {
+  width: 90px;
+  height: 90px;
+  background: #ffd76a;
+  left: 14%;
+  top: 18%;
+}
+.dotB {
+  width: 120px;
+  height: 120px;
+  background: #38bdf8;
+  right: 16%;
+  bottom: 20%;
+  opacity: 0.35;
+}
+.dotC {
+  width: 70px;
+  height: 70px;
+  background: #9b8cff;
+  left: 45%;
+  top: 48%;
+  opacity: 0.2;
+}
+.emoji {
+  position: absolute;
+  font-size: clamp(42px, 7vw, 72px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---------- SECTION BASES ---------- */
+.section {
+  padding: clamp(36px, 6vw, 64px) 0;
+  border-bottom: 1px solid #222a55;
+}
+.sectionAlt {
+  padding: clamp(36px, 6vw, 64px) 0;
+  background: linear-gradient(180deg, #0d1134, #0a0f2e);
+  border-top: 1px solid #222a55;
+  border-bottom: 1px solid #222a55;
+}
+.h2 {
+  margin: 0 0 clamp(14px, 2.6vw, 22px);
+  font-weight: 900;
+  font-size: clamp(22px, 4vw, 40px);
+  text-align: center;
+  text-wrap: balance;
+}
+
+/* ---------- SPECIALIZATION ---------- */
+.specGrid {
+  --min: 250px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
+  gap: clamp(10px, 2.4vw, 16px);
+}
+.card {
+  padding: clamp(12px, 2.6vw, 16px);
+  border: 1px solid #2a2f63;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #131845, #0a0f2e);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+.h3 {
+  margin: 4px 0 8px;
+  font-size: clamp(17px, 2.2vw, 22px);
+  font-weight: 800;
+}
+
+/* ---------- FRAUD TYPES ---------- */
+.fraudGrid {
+  --min: 240px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
+  gap: clamp(10px, 2.2vw, 14px);
+}
+.fraudCard {
+  padding: clamp(12px, 2.4vw, 14px);
+  border: 1px solid #2a2f63;
+  border-radius: 12px;
+  background: #0e1340;
+  font-size: clamp(14px, 1.8vw, 15.5px);
+}
+
+/* ---------- PROCESS ---------- */
+.steps {
+  --min: 250px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
+  gap: clamp(10px, 2.4vw, 16px);
+}
+.step {
+  padding: clamp(18px, 2.6vw, 18px);
+  border: 1px solid #2a2f63;
+  border-radius: 14px;
+  background: #0e1340;
+  position: relative;
+}
+.stepBadge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: #161616;
+  background: linear-gradient(180deg, #ffd76a, #ffb347);
+  font-size: 14px;
+}
+
+/* ---------- HOW IT WORKS ---------- */
+.twocol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(12px, 2.6vw, 18px);
+  color: #c9cffc;
+  font-size: clamp(14px, 1.8vw, 16px);
+}
+
+/* ---------- WARNING SIGNS ---------- */
+.signs {
+  --min: 280px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
+  gap: clamp(10px, 2.2vw, 16px);
+}
+.sign {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: start;
+  gap: 8px;
+  padding: clamp(10px, 2.2vw, 12px) clamp(12px, 2.6vw, 14px);
+  border: 1px solid #2a2f63;
+  border-radius: 12px;
+  background: #0e1340;
+}
+.bullet {
+  color: #ffd76a;
+}
+
+/* ---------- BIG CTA ---------- */
+.ctaSection {
+  padding: clamp(40px, 7vw, 72px) 0;
+  text-align: center;
+  background: radial-gradient(
+      400px 180px at 50% 0%,
+      rgba(255, 215, 106, 0.12),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #0f1336, #0a0f2e);
+  border-top: 1px solid #222a55;
+  border-bottom: 1px solid #222a55;
+}
+.h2Alt {
+  margin: 0 0 6px;
+  font-weight: 900;
+  font-size: clamp(22px, 3.4vw, 36px);
+}
+.ctaSub {
+  color: #c9cffc;
+  margin: 0 0 clamp(12px, 3vw, 16px);
+}
+.ctaBig {
+  display: inline-block;
+  padding: clamp(12px, 2.6vw, 16px) clamp(18px, 3.2vw, 24px);
+  border-radius: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  background: linear-gradient(180deg, #ffd76a, #ffb347);
+  color: #161616;
+  box-shadow: 0 18px 40px rgba(255, 215, 106, 0.25);
+  min-height: 48px;
+}
+
+/* ---------- FAQ ---------- */
+.faqs {
+  display: grid;
+  gap: clamp(8px, 2vw, 12px);
+}
+.faq {
+  border: 1px solid #2a2f63;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0e1340;
+}
+.faqQ {
+  cursor: pointer;
+  list-style: none;
+  padding: clamp(12px, 2.4vw, 14px) clamp(14px, 2.8vw, 16px);
+  font-weight: 800;
+  position: relative;
+}
+.faqQ::-webkit-details-marker {
+  display: none;
+}
+.faq[open] .faqQ {
+  background: rgba(255, 255, 255, 0.04);
+}
+.faqA {
+  padding: clamp(10px, 2.4vw, 14px) clamp(14px, 2.8vw, 16px)
+    clamp(14px, 3vw, 18px);
+  color: #c9cffc;
+  font-size: clamp(14px, 1.8vw, 15.5px);
+}
+
+/* ---------- SERVICES NAV ---------- */
+.services {
+  --min: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
+  gap: clamp(10px, 2.2vw, 14px);
+}
+.svc {
+  display: grid;
+  place-items: center;
+  min-height: clamp(64px, 10vw, 92px);
+  border: 1px solid #2a2f63;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  color: #e6e9ff;
+  background: #0e1340;
+  text-align: center;
+  padding: 10px;
+}
+.svc:hover {
+  color: #161616;
+  background: linear-gradient(180deg, #ffd76a, #ffb347);
+  border-color: #ffbe57;
+}
+
+/* ---------- RESPONSIVE TUNING ---------- */
+@media (max-width: 1024px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .twocol {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 380px) {
+  .cta,
+  .altCta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Respect safe areas on iOS notches when used full-bleed */
+@supports (padding: max(0px)) {
+  .hero,
+  .section,
+  .sectionAlt,
+  .ctaSection {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+}
+
+/* Modern mobile viewport unit for sticky UIs (not strictly needed here) */
+@supports (height: 1svh) {
+  .hero {
+    min-height: 40svh;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .cta,
+  .ctaBig {
+    box-shadow: none;
+  }
+}

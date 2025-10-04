@@ -1,0 +1,85 @@
+[
+  {
+    "id": "crypto-tracing-exchanges",
+    "title": "Crypto Tracing: What Exchanges Actually Respond To",
+    "excerpt": "We tested response times and evidence formats that speed up compliance reviews...",
+    "img": "/images/cryptonewsimg1.webp",
+    "date": "2025-08-12",
+    "body": [
+      "Intro paragraph about tracing requests and compliance teams.",
+      "What exchanges actually read: case IDs, chain hops, tx hashes, time-bound requests.",
+      "Checklist and template you can copy/paste."
+    ]
+  },
+  {
+    "id": "forex-broker-red-flags-2025",
+    "title": "Forex Broker Red Flags (2025 Update)",
+    "excerpt": "Execution quirks, bonus traps, withdrawal friction—common patterns and how to document them...",
+    "img": "/images/forexnewsimg1.webp",
+    "date": "2025-07-22",
+    "body": [
+      "Updated list of red flags seen in 2025.",
+      "How to capture evidence your bank will accept.",
+      "Escalation path when tickets stall."
+    ]
+  },
+  {
+  "id": "chargeback-playbook-crypto-onramps",
+  "title": "Chargeback Playbook for Crypto On-Ramps",
+  "excerpt": "When card rails touched the funds, you have options...",
+  "img": "/images/scamimg.webp",
+  "date": "2025-06-15",
+  "body": [
+    "When and how chargebacks apply...",
+    "Issuer descriptors, deadlines, evidence..."
+  ]
+},
+{
+  "id": "forex-ponzi-warning",
+  "title": "Forex Ponzi Schemes: The Illusion of Guaranteed Profits",
+  "excerpt": "Many so-called forex ‘investment clubs’ lure traders with unrealistic promises...",
+  "img": "/images/forexnewsimg2.jpg",
+  "date": "2025-07-20",
+  "body": [
+    "Ponzi schemes in forex often disguise themselves as managed account services or investment pools.",
+    "Scammers promise guaranteed returns of 20–50% monthly — something no legitimate forex firm can sustain.",
+    "Always check if the firm is licensed with a recognized regulator, and beware of platforms that push referrals or bonuses for recruiting others."
+  ]
+},
+{
+  "id": "crypto-exchange-exit-scam",
+  "title": "Crypto Exchange Exit Scams: How to Spot and Avoid",
+  "excerpt": "Not all platforms are what they claim — here’s how to identify red flags before depositing your funds...",
+  "img": "/images/cryptonewsimg2.jpg",
+  "date": "2025-07-10",
+  "body": [
+    "Exit scams occur when fraudulent crypto exchanges suddenly shut down and disappear with users’ deposits.",
+    "Warning signs include: unrealistic returns, unverified licenses, poor liquidity, and sudden withdrawal issues.",
+    "To protect yourself: use only regulated exchanges, enable two-factor authentication, and never leave large balances on platforms."
+  ]
+},
+{
+  "id": "romance-scam-awareness",
+  "title": "Romance Scams on the Rise: Protecting Your Heart and Wallet",
+  "excerpt": "Fraudsters exploit emotions to trick victims into sending money...",
+  "img": "/images/romancescamimg20.webp",
+  "date": "2025-08-01",
+  "body": [
+    "Romance scams usually begin on dating apps or social media, where criminals build trust over weeks or months.",
+    "They fabricate emergencies — medical bills, travel issues, or sudden crises — and pressure victims to send money.",
+    "Never send funds to someone you’ve never met in person, and be wary if they avoid video calls or push for secrecy."
+  ]
+},
+{
+  "id": "tax-fraud-alert",
+  "title": "Tax Fraud Scams: Don’t Fall for Fake IRS and Revenue Agents",
+  "excerpt": "Scammers impersonate tax authorities to intimidate victims into paying fake debts...",
+  "img": "/images/taxnewsimg1.jpeg",
+  "date": "2025-08-15",
+  "body": [
+    "Tax scams spike around filing season, with criminals calling, emailing, or texting victims while posing as tax officers.",
+    "They claim unpaid taxes, threaten arrests, or demand immediate payments via gift cards or crypto wallets.",
+    "Real tax agencies never demand payment over the phone or request gift cards. Always verify notices directly from official websites before taking action."
+  ]
+}
+]
